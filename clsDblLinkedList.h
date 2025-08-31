@@ -83,6 +83,7 @@ public:
         {
             new_node->prev = NULL;
             head = new_node;
+            _Size++;
             return;
         }
 
@@ -146,6 +147,7 @@ public:
         {
             head = NULL;
             delete CurrentNode;
+            _Size--;
             return;
         }
 
